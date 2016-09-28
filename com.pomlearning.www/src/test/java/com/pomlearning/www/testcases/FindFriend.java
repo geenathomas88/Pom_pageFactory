@@ -51,7 +51,7 @@ public class FindFriend {
 		Logger log = Logger.getLogger("facebook");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-		LandingPage landingPage = loginPage.doLogin("geenathms@yahoo.com", "bibin@1984");
+		LandingPage landingPage = loginPage.doLogin("", "");
 		log.debug("Logged in");
 		ProfilePage profilePage = landingPage.gotoProfile();
 		log.debug("In Profile page");
