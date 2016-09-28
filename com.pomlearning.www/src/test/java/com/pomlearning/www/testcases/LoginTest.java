@@ -50,7 +50,7 @@ public class LoginTest {
 		Logger log = Logger.getLogger("facebook");
 		log.debug("Starting test");	
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-		LandingPage landingPage = loginPage.doLogin("geenathms@yahoo.com","bibin@1984");
+		LandingPage landingPage = loginPage.doLogin("","");
 		log.debug("Logged in");
 		landingPage.gotoProfile();
 		log.debug("In Profile page");
