@@ -52,13 +52,13 @@ public class ChangePassword {
 		Logger log = Logger.getLogger("facebook");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-		LandingPage landingPage = loginPage.doLogin("udayip123@gmail.com", "geena123");
+		LandingPage landingPage = loginPage.doLogin("", "");
 		log.debug("Logged in");	
 		TopMenu topMenu = PageFactory.initElements(driver, TopMenu.class);
 		SettingsPage settingPage = topMenu.gotoSettings();
 		log.debug("Reached Settings Page");
 		
-		settingPage.editPassword("geena123", "itstough123");
+		settingPage.editPassword("", "");
 		topMenu.logout();
 	}
 }
